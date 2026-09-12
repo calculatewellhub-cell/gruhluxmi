@@ -30,6 +30,8 @@ if ( class_exists( 'WooCommerce' ) ) {
 	require WELLHUB_DIR . '/inc/woocommerce/woocommerce-setup.php';
 	require WELLHUB_DIR . '/inc/woocommerce/woocommerce-hooks.php';
 	require WELLHUB_DIR . '/inc/woocommerce/product-fields.php';
+	require WELLHUB_DIR . '/inc/real-products/products-data.php';
+	require WELLHUB_DIR . '/inc/real-products/import.php';
 } else {
 	add_action( 'admin_notices', 'wellhub_woocommerce_missing_notice' );
 }

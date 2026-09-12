@@ -44,6 +44,12 @@ Settings → Reading → "A static page" → set **Homepage** to a page using th
 
 ---
 
+## 3.5. CalculateWellHub real product catalog (business-specific)
+
+Appearance → **CalculateWellHub Products** imports the business's actual 9-product Women's Health & Pregnancy catalog — real titles, descriptions, "what's included" lists, FAQ content, and the bundled PDF files under `inc/real-products/files/` — as virtual + downloadable WooCommerce products, complete with Yoast/Rank Math–compatible SEO meta (title, description, focus keyword) pre-filled so either plugin picks up real content the moment it's installed. Safe to re-run; already-imported products (matched by title) are skipped.
+
+This is separate from the generic Demo Content tool in §4 below, and unlike that placeholder content, it ships real files and real business copy. Because of that, it's the one part of this theme that isn't reusable for a different business — if this theme is ever repackaged as a generic template, remove `inc/real-products/` (and its require lines in `functions.php`) along with the PDFs, which is also why it's kept in its own folder rather than mixed into `inc/demo-content.php`. It also makes the theme zip considerably larger (~22MB) than a typical WordPress theme, since it bundles the actual downloadable files as backing content for this business.
+
 ## 4. Demo content (optional)
 
 Appearance → **Demo Content** → "Install Demo Content" creates, if they don't already exist:
